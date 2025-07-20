@@ -7,16 +7,31 @@ A home server is essentially a dedicated computer in your house that runs contin
 
 * Centralized storage: Storing all your family photos, videos, and documents in one place.
 
-* Media streaming: Running a media server like Plex or Jellyfin to stream your movies and music to any screen.
+* Media streaming: Running a media server like [Plex](https://www.plex.tv/) or [Jellyfin](https://jellyfin.org/) to stream your movies and music to any screen.
 
-* Smart home automation: Managing your smart lights, speakers, and other devices.
-
-* Data backups: Creating a reliable backup for all your computers and phones.
+* Home lab: Managing your smart lights, speakers, and other devices.
 
 By using a home server, you gain more control, privacy, and flexibility over your data and services.
+
 ## 🛠️ Setting up the server
+i decide to go with [UBUNTU SERVER](https://ubuntu.com/download/server), as it seemed like the most convenient and well-supported option. 
+I followed [this guide](https://youtu.be/TPtgeFzQTrk) to get everything set up and running.
 
 ## 🔧 what i use it for
-i decide to go with [UBUNTU SERVER](https://ubuntu.com/download/server), because is seems like the most convenient option.
-I followed [this guide](https://www.youtube.com/watch?v=TPtgeFzQTrk&t=273s&ab_channel=Djambo) 
+This server is now the backbone of my home network, providing several key services.
+
+### 📺 Media Streaming with Jellyfin
+I've deployed Plex on the server to manage and stream my entire media library. 
+This allows me to access my movies and TV shows from any device connected to my network.
+
+### 💾 Storage:
+The server acts as my personal network-attached storage (NAS). 
+I've configured it to be accessible remotely using Tailscale VPN, which creates a secure, private network between all my devices. 
+This ensures I can access my files from anywhere without compromising my data.
+
+### (﹙˓ 🖨️ ˒﹚) wireless printing:
+To give new life to an old printer, I connected it to the server using [CUPS](https://openprinting.github.io/cups/).
+By setting up the server as a print server, I can now use the printer wirelessly from any computer on my home network.
+
+
 
